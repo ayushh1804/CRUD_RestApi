@@ -10,8 +10,7 @@ app.use('/', productRoutes)
 
 
 app.get("/", (req, res) => {
-  console.log("Test!");
-  res.send('Hello')
+  res.send("Welcome to the CRUD Restful Api")
 });
 
 
