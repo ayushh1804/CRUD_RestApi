@@ -6,7 +6,7 @@ const router = express.Router();
 const products = [{
     name : "A_Brief_History_Of_Time",
     category: "Book",
-    genre: "science",},
+    genre: "science"},
     {
         name : "Black_Holes",
         category : "Book",
@@ -18,9 +18,10 @@ router.get('/products', (req,res) => {
     res.send(products)
 });
 
-router.post('/products',(req,res) => {
-   const product = req.body;
-   products.push(product);
+router.post('/',(req,res) => {
+ const product = req.body;
+ products.push(product);
+//    products.push(product);
    res.send(`${product.category} of ${product.name} has been added to the database`)
 })
 
